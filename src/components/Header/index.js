@@ -14,12 +14,6 @@ export function Header() {
       </header>
 
       <style jsx>{`
-      * {
-        padding: 0;
-        margin: 0;
-        text-decoration: none;
-        box-sizing: border-box;
-      }
       .c-header {
         display: flex;
         justify-content: space-around;
