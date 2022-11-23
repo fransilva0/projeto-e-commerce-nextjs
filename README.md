@@ -61,6 +61,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - [Node.js](https://nodejs.org/en/)
 - [React](https://pt-br.reactjs.org/)
+- [Styled-Components](https://styled-components.com/)
+- [Styled-jsx](https://github.com/vercel/styled-jsx)
 
 ## :white_check_mark: Pré requisitos ##
 
