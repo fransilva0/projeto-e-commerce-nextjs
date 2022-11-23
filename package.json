@@ -10,7 +10,8 @@
     "react-dom": "^18.2.0"
   },
   "scripts": {
-    "commit": "cz"
+    "commit": "cz",
+    "dev": "next dev"
   },
   "devDependencies": {
     "cz-conventional-changelog": "^3.3.0"
