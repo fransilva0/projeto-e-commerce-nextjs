@@ -48,12 +48,19 @@
   O Projeto Player One veio como um desafio simples do Programa One no qual seria uma tela simples inicial em HTML, CSS e JavaScript. Contudo, decidi seguir com a ideia do projeto e desenvolver mais profundamente o e-commerce, usando tecnologias como React.js, Next.js.
 </p>
 
+<p>
+  Para estilizar os componentes do projeto optei por começar a aprender e desenvolver conhecimentos no styled-components no qual percebi uma certa facilidade de utilização no projeto.
+</p>
+
 ## :sparkles: Funcionalidades ##
 
-- [ ] Tela de Login;
-- [ ] Fazer Login;
-- [ ] Barra de pesquisa de produtos;
+- [ ] Popup de politica de cookies;
+- [ ] Tela de login funcional;
+- [ ] Página de perfil de usuário;
+- [ ] Barra de pesquisa de produtos funcional;
 - [ ] Tela de compra de produtos;
+- [ ] Carrinho de compras funcional;
+- [ ] Separação de Produtos por categorias;
 
 ## :rocket: Tecnologias ##
 
