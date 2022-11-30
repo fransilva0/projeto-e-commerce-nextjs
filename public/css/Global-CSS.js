@@ -26,6 +26,13 @@ const GlobalCSS = createGlobalStyle`
     background-color: var(--cor-1);
     border-radius: 10px;
   }
+
+  :root {
+    --cor-1: #628FD9;
+    --cor-2: #26539B;
+    --cor-3: #EBF1FA;
+    --font-1: 'Montserrat', sans-serif;
+  }
 `;
 
 export default GlobalCSS;
