@@ -49,7 +49,11 @@
 </p>
 
 <p>
-  Para estilizar os componentes do projeto optei por começar a aprender e desenvolver conhecimentos no styled-components no qual percebi uma certa facilidade de utilização no projeto.
+  Para estilizar os componentes do projeto optei por começar a aprender e desenvolver conhecimentos no styled-components no qual percebi uma certa facilidade de utilização no projeto. Já a lista de produtos eu utilizei o Json para armazenar os dados de imagem, nome do produto, preço e link para a página do produto que está planejado para ser desenvolvido posteriormente.
+</p>
+
+<p>
+  Os dados dos produtos no Json foram manipulados usando a função map no arquivo index.js dentro da pasta do componente ProductList, sendo esse componente renderiza todas as listas que estão na tela inicial e são iguais em estilização também.
 </p>
 
 ## :sparkles: Funcionalidades ##
@@ -70,6 +74,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [React](https://pt-br.reactjs.org/)
 - [Styled-Components](https://styled-components.com/)
 - [Styled-jsx](https://github.com/vercel/styled-jsx)
+- [Json](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/JSON)
 
 ## :white_check_mark: Pré requisitos ##
 
