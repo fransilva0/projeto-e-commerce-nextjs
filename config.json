@@ -1,3 +1,119 @@
 {
-  "imageBanner": "https://images.unsplash.com/photo-1509366812838-b768dc7a8b3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+  "imageBanner": "https://images.unsplash.com/photo-1509366812838-b768dc7a8b3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+  "productsList": {
+    "superMario": [
+      {
+        "title": "Boneco Super Mario",
+        "url": "#",
+        "image": "https://images.unsplash.com/photo-1551103782-8ab07afd45c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3VwZXIlMjBtYXJpb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        "price": "R$ 50,00"
+      },
+      {
+        "title": "Bonecos Mario e amigos",
+        "url": "#",
+        "image": "https://images.unsplash.com/photo-1566576912317-9f38f640f471?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "price": "R$ 50,00"
+      },
+      {
+        "title": "Bonecos Mario e amigos",
+        "url": "#",
+        "image": "https://images.unsplash.com/photo-1566576912325-fde224c9a1af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "price": "R$ 50,00"
+      },
+      {
+        "title": "Boneco Mario Kart",
+        "url": "#",
+        "image": "https://images.unsplash.com/photo-1599409636295-e3cf3538f212?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "price": "R$ 50,00"
+      },
+      {
+        "title": "Boneco Mario",
+        "url": "#",
+        "image": "https://images.unsplash.com/photo-1574387324389-2366ec67539c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "price": "R$ 50,00"
+      },
+      {
+        "title": "Boneco Mario com powerup",
+        "url": "#",
+        "image": "https://images.unsplash.com/photo-1606979516934-cd4231e6e6f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "price": "R$ 50,00"
+      }
+    ],
+    "consoles": [
+      {
+        "title": "Console Clássico",
+        "url": "#",
+        "image": "https://images.unsplash.com/photo-1605134550917-5fe8cf25a125?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "price": "R$ 50,00"
+      },
+      {
+        "title": "X Box",
+        "url": "#",
+        "image": "https://images.unsplash.com/photo-1621259182181-1ccb9ec306cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=912&q=80",
+        "price": "R$ 50,00"
+      },
+      {
+        "title": "Game Boy",
+        "url": "#",
+        "image": "https://images.unsplash.com/photo-1525799894461-3cfe39b72d69?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "price": "R$ 50,00"
+      },
+      {
+        "title": "Controle Clásssico",
+        "url": "#",
+        "image": "https://images.unsplash.com/photo-1531594835867-65b60cc9e4ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "price": "R$ 50,00"
+      },
+      {
+        "title": "Plastation 5",
+        "url": "#",
+        "image": "https://images.unsplash.com/photo-1507457379470-08b800bebc67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=909&q=80",
+        "price": "R$ 50,00"
+      },
+      {
+        "title": "Controle console moderno",
+        "url": "#",
+        "image": "https://images.unsplash.com/photo-1616801060191-6085bad82f95?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "price": "R$ 50,00"
+      }
+    ],
+    "Diversos" : [
+      {
+        "title": "Game",
+        "url": "#",
+        "image": "https://images.unsplash.com/photo-1621296680086-991d687eeddc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
+        "price": "R$ 50,00"
+      },
+      {
+        "title": "Boneco Sonic",
+        "url": "#",
+        "image": "https://images.unsplash.com/photo-1550747545-c896b5f89ff7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=867&q=80",
+        "price": "R$ 50,00"
+      },
+      {
+        "title": "Bonecos diversos",
+        "url": "#",
+        "image": "https://images.unsplash.com/photo-1566577134665-2c674085abf7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "price": "R$ 50,00"
+      },
+      {
+        "title": "Bonecos Donkey Kong",
+        "url": "#",
+        "image": "https://images.unsplash.com/photo-1566577134650-bbbca4ec35f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "price": "R$ 50,00"
+      },
+      {
+        "title": "Bonecos Pokémon",
+        "url": "#",
+        "image": "https://images.unsplash.com/photo-1605979257913-1704eb7b6246?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "price": "R$ 50,00"
+      },
+      {
+        "title": "Pokébola",
+        "url": "#",
+        "image": "https://images.unsplash.com/photo-1613771404721-1f92d799e49f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
+        "price": "R$ 50,00"
+      }
+    ]
+  }
 }
