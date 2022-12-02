@@ -1,9 +1,11 @@
+import { Icon } from '@iconify/react';
+
 export function Header() {
   return (
     <>
       <header className="c-header">
         <div className="c-header__logo">
-          <iconify-icon className="c-header__icon" icon="akar-icons:game-controller"></iconify-icon>
+          <Icon color="#628FD9"  width="3rem" icon="ph:game-controller" />
           <a href="./index.html">
             <h1 className="c-header__title">Player<span>One</span></h1>
           </a>
@@ -40,11 +42,6 @@ export function Header() {
 
       .c-header__title span {
         color: #628FD9;
-      }
-
-      .c-header__icon {
-        color: #628FD9;
-        font-size: 2rem;
       }
 
       .c-header__button-login {
