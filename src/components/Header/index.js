@@ -1,4 +1,5 @@
 import { Icon } from '@iconify/react';
+import { SearchBar } from '../SearchBar';
 
 export function Header() {
   return (
@@ -10,6 +11,7 @@ export function Header() {
             <h1 className="c-header__title">Player<span>One</span></h1>
           </a>
         </div>
+        <SearchBar />
         <div>
          <a  href="./pages/login.html" className="c-header__button-login">Login</a>
         </div>
