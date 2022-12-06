@@ -50,7 +50,7 @@ const SectionProducts = styled.section`
 
 `;
 
-export function ProductList(propriedades) {
+export function ProductList({searchValue, ...propriedades}) {
   const ProductListNames = Object.keys(propriedades.ProductsList)
   return (
     <>
@@ -66,7 +66,11 @@ export function ProductList(propriedades) {
 
             <ul>
               {
-                produtos.map((produto) => {
+                produtos.filter((produto) => {
+                  const titleNormalized = produto.title.toLowerCase();
+                  const searchValueNormalized = searchValue.toLowerCase();
+                  return titleNormalized.includes(searchValueNormalized)
+                }).map((produto) => {
                   return (
                     <li>
                       <img src={produto.image} />

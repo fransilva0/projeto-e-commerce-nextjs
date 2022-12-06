@@ -1,7 +1,7 @@
 import { Icon } from '@iconify/react';
 import { SearchBar } from '../SearchBar';
 
-export function Header() {
+export function Header({valorFiltro, setValorFiltro}) {
   return (
     <>
       <header className="c-header">
@@ -11,7 +11,7 @@ export function Header() {
             <h1 className="c-header__title">Player<span>One</span></h1>
           </a>
         </div>
-        <SearchBar />
+        <SearchBar valorFiltro={valorFiltro} setValorFiltro={setValorFiltro} />
         <div>
          <a  href="./pages/login.html" className="c-header__button-login">Login</a>
         </div>

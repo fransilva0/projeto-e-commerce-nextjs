@@ -50,11 +50,17 @@ const Search = styled.div`
   }
 `;
 
-export function SearchBar() {
+export function SearchBar({valorFiltro, setValorFiltro}) {
+
+  const valorDaBusca = valorFiltro;
+  const setValorDaBusca = setValorFiltro;
+
   return (
       <>
         <Search>
-          <input type="text" placeholder="Pesquise" />
+          <input type="text" placeholder="Pesquise" onChange={(event) => {
+            setValorDaBusca(event.target.value);
+          }} value={valorDaBusca} />
           <button><Icon icon="simple-line-icons:magnifier" /></button>
         </Search>
       </>
