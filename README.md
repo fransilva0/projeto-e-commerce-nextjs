@@ -1,5 +1,5 @@
 <div align='center' id='top'>
-<!-- <img src='./.github/app.gif' alt='app_name' /> -->
+<img src='./.github/app.png' alt='app_name' />
 
 &#xa0;
 
@@ -37,7 +37,7 @@
 <a href='#white_check_mark-pré-requesitos'>Pré requisitos</a> &#xa0; | &#xa0;
 <a href='#checkered_flag-começando'>Começando</a> &#xa0; | &#xa0;
 <a href='#memo-licença'>Licença</a> &#xa0; | &#xa0;
-<a href='https://github.com/fransilva0' target='_blank'>Autor</a>
+<a href='https://github.com/fransilva0' target='_blank'>Autor</a> &#xa0; | &#xa0;
 </p>
 
 <br>
@@ -53,15 +53,24 @@
 </p>
 
 <p>
-  Os dados dos produtos no Json foram manipulados usando a função map no arquivo index.js dentro da pasta do componente ProductList, sendo esse componente renderiza todas as listas que estão na tela inicial e são iguais em estilização também.
+  Os dados dos produtos no Json foram manipulados usando a função map no arquivo index.js dentro da pasta do componente ProductList, sendo esse componente renderiza todas as listas que estão na tela inicial e são iguais em estilização também. Os ícones presentes nesse projeto foram pegos do site <a href="https://iconify.design/">Iconify</a>, sendo todos com licença MIT assim como o projeto.
+</p>
+
+<p>
+  Para fazer a barra de pesquisa por produtos funcionar eu fiz um filter para a filtragem dos produtos no componente ProductList responsável pelos cards de produtos. Além disso, no componente SearchBar eu precisei cuidar de pegar o valor digitado pelo usuário, esse valor ficava armazenado no index.js que está dentro da pasta de pages de forma global no projeto, para que eu pudesse passar o que foi digitado pelo usuário para onde isso seria necessário, no caso do input da barra de pesquisa para o filter na lista de produtos.
+</p>
+
+<p>
+  Durante o processo descrito no parágrafo anterior eu utilizei o conceito de Prop drilling, que é um estágio do desenvolvimento que acontece quando precisamos obter dados que estão em várias camadas na árvore de componente react. Já que o useState() foi colocado na página de index.js e precisou descer "perfurando" o componente de Header até chegar no componente SearchBar.
 </p>
 
 ## :sparkles: Funcionalidades ##
 
+- [ ] Modo escuro na página;
 - [ ] Popup de politica de cookies;
 - [ ] Tela de login funcional;
 - [ ] Página de perfil de usuário;
-- [ ] Barra de pesquisa de produtos funcional;
+- [X] Barra de pesquisa de produtos funcional;
 - [ ] Tela de compra de produtos;
 - [ ] Carrinho de compras funcional;
 - [ ] Separação de Produtos por categorias;
