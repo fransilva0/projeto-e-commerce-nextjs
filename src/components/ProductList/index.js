@@ -28,7 +28,10 @@ const SectionProducts = styled.section`
     margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+  }
+
+  li {
+    padding-right: 0.5rem;
   }
 
   img {

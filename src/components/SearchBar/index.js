@@ -4,6 +4,8 @@ import styled from 'styled-components';
 const Search = styled.div`
   position: relative;
   display: none;
+  display: flex;
+  justify-content: space-around;
 
   input {
     position: relative;
@@ -16,24 +18,20 @@ const Search = styled.div`
     border: 1px solid var(--cor-1);
     border-radius: 22px;
     outline: none;
+    cursor: pointer;
   }
 
-  button {
+  .icon {
     position: absolute;
     top: 50%;
-    right: 1px;
-    translate: 0 -50%;
+    right: 10px;
+    translate: 0 -100%;
     z-index: 1;
     font-size: 20px;
-    width: 60px;
-    height: 42px;
     border-radius: 0;
     border: 0;
     padding: 0;
-    cursor: pointer;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    background: var(--cor-1);
+    color: var(--cor-1);
   }
 
   @media (width >= 500px) {
@@ -61,7 +59,7 @@ export function SearchBar({valorFiltro, setValorFiltro}) {
           <input type="text" placeholder="Pesquise" onChange={(event) => {
             setValorDaBusca(event.target.value);
           }} value={valorDaBusca} />
-          <button><Icon icon="simple-line-icons:magnifier" /></button>
+          <Icon className="icon" icon="simple-line-icons:magnifier" />
         </Search>
       </>
   )
