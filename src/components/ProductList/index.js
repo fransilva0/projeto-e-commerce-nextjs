@@ -15,11 +15,11 @@ const SectionProducts = styled.section`
 
   a {
     font-size: 0.9rem;
-    color: var(--cor-1);
+    color: ${({theme}) => theme.light.lightBlue1 || "var(--cor-1)"};
     transition: all 300ms ease-out;
 
     &:hover {
-      color: var(--cor-2);
+      color: ${({theme}) => theme.light.darkBlue1 || "var(--cor-2)"};
       font-size: 1rem;
     }
   }

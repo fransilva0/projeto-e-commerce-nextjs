@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Icon } from '@iconify/react';
 
 const SectionFooterTop = styled.footer`
-  background: var(--cor-3);
+  background: ${({theme}) => theme.light.lightBlue2 || "var(--cor-3)"};
   align-items: flex-start;
   padding: 2rem;
   display: flex;
@@ -20,7 +20,7 @@ const SectionFooterLogo = styled.div`
   }
 
   span {
-    color: var(--cor-1);
+    color: ${({theme}) => theme.light.lightBlue1 || "var(--cor-1)"};
   }
 `;
 
@@ -30,12 +30,12 @@ const MenuLinks = styled.ul`
   }
 
   a {
-    color: var(--cor-1);
+    color: ${({theme}) => theme.light.lightBlue1 || "var(--cor-1)"};
     font-size: 0.8rem;
     transition: all 300ms ease-out;
 
     &:hover {
-      color: var(--cor-2);
+      color: ${({theme}) => theme.light.darktBlue1 || "var(--cor-2)"};
     }
   }
 `;
@@ -59,8 +59,8 @@ const FooterForm = styled.div`
     display: block;
     margin-bottom: 1rem;
     font-size: 1.8rem;
-    color: #fff;
-    font-family: var(--font-1);
+    color: ${({theme}) => theme.light.white || "#fff"};
+    font-family: ${({theme}) => theme.light.lightBlue1 || "var(--cor-1)"};
   }
 
   input {
@@ -70,7 +70,7 @@ const FooterForm = styled.div`
     border: none;
     background-color: #fff;
     outline: none;
-    font-family: var(--font-1);
+    font-family: ${({theme}) => theme.light.lightBlue1 || "var(--cor-1)"};
   }
 
   textarea {
@@ -79,22 +79,22 @@ const FooterForm = styled.div`
     height: 100px;
     padding: 8px;
     border: none;
-    background-color: #fff;
+    background-color: ${({theme}) => theme.light.white || "#fff"};
     outline: none;
     resize: none;
-    font-family: var(--font-1);
+    font-family: ${({theme}) => theme.light.lightBlue1 || "var(--cor-1)"};
   }
 
   button {
     padding: 0.5rem 1rem;
     background: transparent;
-    border: 2px solid var(--cor-1);
-    color: var(--cor-1);
+    border: 2px solid ${({theme}) => theme.light.lightBlue1 || "var(--cor-1)"};
+    color: ${({theme}) => theme.light.lightBlue1 || "var(--cor-1)"};
     transition: all 300ms ease-out;
 
     &:hover {
-      background: var(--cor-1);
-      color: #fff;
+      background: ${({theme}) => theme.light.lightBlue1 || "var(--cor-1)"};
+      color: ${({theme}) => theme.light.white || "#fff"};
     }
   }
 

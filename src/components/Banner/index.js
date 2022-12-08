@@ -7,7 +7,7 @@ const StyledBanner = styled.section`
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  color: #fff;
+  color: ${({theme}) => theme.light.white || "#fff"};
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -25,15 +25,15 @@ const StyledBanner = styled.section`
 
   button {
     padding: 0.5rem 1rem;
-    background: var(--cor-1);
-    border: 2px solid var(--cor-1);
-    color: #fff;
+    background: ${({theme}) => theme.light.lightBlue1 || "var(--cor-1)"};
+    border: 2px solid ${({theme}) => theme.light.lightBlue1 || "var(--cor-1)"};
+    color: ${({theme}) => theme.light.white || "#fff"};
     transition: all 300ms ease-out;
     width: 10rem;
 
     &:hover {
-      background: var(--cor-2);
-      border-color: var(--cor-2);
+      background: ${({theme}) => theme.light.darkBlue1 || "var(--cor-2)"};
+      border-color: ${({theme}) => theme.light.darktBlue1 || "var(--cor-2)"};
     }
   }
 `;

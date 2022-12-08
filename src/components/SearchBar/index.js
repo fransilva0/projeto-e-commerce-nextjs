@@ -15,7 +15,7 @@ const Search = styled.div`
     width: 25vw;
     padding-left: 16px;
     padding-right: 60px;
-    border: 1px solid var(--cor-1);
+    border: 1px solid ${({theme}) => theme.light.lightBlue1 || "var(--cor-1)"};
     border-radius: 22px;
     outline: none;
     cursor: pointer;
@@ -25,13 +25,13 @@ const Search = styled.div`
     position: absolute;
     top: 50%;
     right: 10px;
-    translate: 0 -100%;
+    translate: 0 -50%;
     z-index: 1;
     font-size: 20px;
     border-radius: 0;
     border: 0;
     padding: 0;
-    color: var(--cor-1);
+    color: ${({theme}) => theme.light.lightBlue1 || "var(--cor-1)"};
   }
 
   @media (width >= 500px) {

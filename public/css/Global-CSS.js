@@ -10,7 +10,7 @@ const GlobalCSS = createGlobalStyle`
   }
 
   body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: ${({theme}) => theme.mainStyles.mainSource || "sans-serif"};
   }
 
   ::-webkit-scrollbar {
@@ -18,11 +18,11 @@ const GlobalCSS = createGlobalStyle`
   }
 
   ::-webkit-scrollbar-track {
-    background-color: var(--cor-3);
+    background-color: ${({theme}) => theme.light.lightBlue2 || "var(--cor-3)"};
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: var(--cor-1);
+    background-color: ${({theme}) => theme.light.lightBlue1 || "var(--cor-1)"};
     border-radius: 10px;
   }
 
