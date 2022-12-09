@@ -1,6 +1,7 @@
 import { Icon } from '@iconify/react';
 import { SearchBar } from '../SearchBar';
 import styled from 'styled-components';
+import DarkModeSwitch from './DarkModeSwitch';
 
 const StyledHeader = styled.header`
   display: flex;
@@ -23,6 +24,12 @@ const StyledHeader = styled.header`
     color: var(--cor-1);
   }
 
+  div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
 `;
 
 const SectionLogo = styled.div`
@@ -34,6 +41,7 @@ const SectionLogo = styled.div`
 
 const ButtonLogin = styled.a`
   padding: 0.5rem 1rem;
+  margin: 0.5rem;
   background: transparent;
   border: 2px solid var(--cor-1);
   color: var(--cor-1);
@@ -57,6 +65,7 @@ export function Header({valorFiltro, setValorFiltro}) {
         <SearchBar valorFiltro={valorFiltro} setValorFiltro={setValorFiltro} />
         <div>
          <ButtonLogin  href="./pages/login.html">Login</ButtonLogin>
+         <DarkModeSwitch />
         </div>
       </StyledHeader>
   )
