@@ -7,7 +7,7 @@ const StyledBanner = styled.section`
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  color: ${({theme}) => theme.light.white || "#fff"};
+  color: ${({theme}) => theme.mainStyles.white || "#fff"};
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -27,7 +27,7 @@ const StyledBanner = styled.section`
     padding: 0.5rem 1rem;
     background: ${({theme}) => theme.light.lightBlue1 || "var(--cor-1)"};
     border: 2px solid ${({theme}) => theme.light.lightBlue1 || "var(--cor-1)"};
-    color: ${({theme}) => theme.light.white || "#fff"};
+    color: ${({theme}) => theme.mainStyles.white || "#fff"};
     transition: all 300ms ease-out;
     width: 10rem;
 

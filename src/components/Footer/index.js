@@ -59,7 +59,7 @@ const FooterForm = styled.div`
     display: block;
     margin-bottom: 1rem;
     font-size: 1.8rem;
-    color: ${({theme}) => theme.light.white || "#fff"};
+    color: ${({theme}) => theme.mainStyles.white || "#fff"};
     font-family: ${({theme}) => theme.light.lightBlue1 || "var(--cor-1)"};
   }
 
@@ -94,7 +94,7 @@ const FooterForm = styled.div`
 
     &:hover {
       background: ${({theme}) => theme.light.lightBlue1 || "var(--cor-1)"};
-      color: ${({theme}) => theme.light.white || "#fff"};
+      color: ${({theme}) => theme.mainStyles.white || "#fff"};
     }
   }
 

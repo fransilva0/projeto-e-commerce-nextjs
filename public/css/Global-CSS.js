@@ -11,6 +11,7 @@ const GlobalCSS = createGlobalStyle`
 
   body {
     font-family: ${({theme}) => theme.mainStyles.mainSource || "sans-serif"};
+    background: ${({theme}) => theme.mainStyles.white || "#fff"};
   }
 
   ::-webkit-scrollbar {
