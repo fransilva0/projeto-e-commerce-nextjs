@@ -25,15 +25,15 @@ const StyledBanner = styled.section`
 
   button {
     padding: 0.5rem 1rem;
-    background: ${({theme}) => theme.light.lightBlue1 || "var(--cor-1)"};
-    border: 2px solid ${({theme}) => theme.light.lightBlue1 || "var(--cor-1)"};
+    background: var(--cor-1);
+    border: 2px solid var(--cor-1);
     color: ${({theme}) => theme.mainStyles.white || "#fff"};
     transition: all 300ms ease-out;
     width: 10rem;
 
     &:hover {
-      background: ${({theme}) => theme.light.darkBlue1 || "var(--cor-2)"};
-      border-color: ${({theme}) => theme.light.darktBlue1 || "var(--cor-2)"};
+      background: var(--cor-2);
+      border-color: var(--cor-2);
     }
   }
 `;

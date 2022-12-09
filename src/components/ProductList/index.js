@@ -11,15 +11,16 @@ const SectionProducts = styled.section`
 
   h2 {
     font-size: 2rem;
+    color: ${({theme}) => theme.ColorTitle };
   }
 
   a {
     font-size: 0.9rem;
-    color: ${({theme}) => theme.light.lightBlue1 || "var(--cor-1)"};
+    color: ${({theme}) => theme.PrimaryColorBlue || "var(--cor-1)"};
     transition: all 300ms ease-out;
 
     &:hover {
-      color: ${({theme}) => theme.light.darkBlue1 || "var(--cor-2)"};
+      color: ${({theme}) => theme.SecondaryColorBlue || "var(--cor-2)"};
       font-size: 1rem;
     }
   }
@@ -43,12 +44,14 @@ const SectionProducts = styled.section`
   h3 {
     font-size: 0.8rem;
     margin: 0.5rem 0 0.5rem 0;
+    color: ${({theme}) => theme.ColorTitle };
   }
 
   p {
     font-size: 0.7rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
+    color: ${({theme}) => theme.ColorTitle };
   }
 
 `;

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Icon } from '@iconify/react';
 
 const SectionFooterTop = styled.footer`
-  background: ${({theme}) => theme.light.lightBlue2 || "var(--cor-3)"};
+  background: ${({theme}) => theme.TerciaryColorBlue || "var(--cor-3)"};
   align-items: flex-start;
   padding: 2rem;
   display: flex;
@@ -16,11 +16,11 @@ const SectionFooterLogo = styled.div`
 
   h1 {
     margin-left: 0.5rem;
-    color: #000;
+    color: ${({theme}) => theme.ColorTitle };
   }
 
   span {
-    color: ${({theme}) => theme.light.lightBlue1 || "var(--cor-1)"};
+    color: ${({theme}) => theme.PrimaryColorBlue || "var(--cor-1)"};
   }
 `;
 
@@ -30,12 +30,12 @@ const MenuLinks = styled.ul`
   }
 
   a {
-    color: ${({theme}) => theme.light.lightBlue1 || "var(--cor-1)"};
+    color: ${({theme}) => theme.PrimaryColorBlue || "var(--cor-1)"};
     font-size: 0.8rem;
     transition: all 300ms ease-out;
 
     &:hover {
-      color: ${({theme}) => theme.light.darktBlue1 || "var(--cor-2)"};
+      color: ${({theme}) => theme.SecondaryColorBlue || "var(--cor-2)"};
     }
   }
 `;
@@ -48,6 +48,7 @@ const FooterForm = styled.div`
   h3 {
     margin-bottom: 1rem;
     font-weight: bold;
+    color: ${({theme}) => theme.ColorTitle}
   }
 
   form {
@@ -60,7 +61,7 @@ const FooterForm = styled.div`
     margin-bottom: 1rem;
     font-size: 1.8rem;
     color: ${({theme}) => theme.mainStyles.white || "#fff"};
-    font-family: ${({theme}) => theme.light.lightBlue1 || "var(--cor-1)"};
+    font-family: ${({theme}) => theme.PrimaryColorBlue || "var(--cor-1)"};
   }
 
   input {
@@ -70,7 +71,7 @@ const FooterForm = styled.div`
     border: none;
     background-color: #fff;
     outline: none;
-    font-family: ${({theme}) => theme.light.lightBlue1 || "var(--cor-1)"};
+    font-family: ${({theme}) => theme.PrimaryColorBlue || "var(--cor-1)"};
   }
 
   textarea {
@@ -79,21 +80,21 @@ const FooterForm = styled.div`
     height: 100px;
     padding: 8px;
     border: none;
-    background-color: ${({theme}) => theme.light.white || "#fff"};
+    background-color: ${({theme}) => theme.mainStyles.white || "#fff"};
     outline: none;
     resize: none;
-    font-family: ${({theme}) => theme.light.lightBlue1 || "var(--cor-1)"};
+    font-family: ${({theme}) => theme.PrimaryColorBlue || "var(--cor-1)"};
   }
 
   button {
     padding: 0.5rem 1rem;
     background: transparent;
-    border: 2px solid ${({theme}) => theme.light.lightBlue1 || "var(--cor-1)"};
-    color: ${({theme}) => theme.light.lightBlue1 || "var(--cor-1)"};
+    border: 2px solid ${({theme}) => theme.PrimaryColorBlue || "var(--cor-1)"};
+    color: ${({theme}) => theme.PrimaryColorBlue || "var(--cor-1)"};
     transition: all 300ms ease-out;
 
     &:hover {
-      background: ${({theme}) => theme.light.lightBlue1 || "var(--cor-1)"};
+      background: ${({theme}) => theme.PrimaryColorBlue || "var(--cor-1)"};
       color: ${({theme}) => theme.mainStyles.white || "#fff"};
     }
   }
@@ -103,6 +104,7 @@ const FooterForm = styled.div`
 const SectionFooterBottom = styled.div`
   padding: 2rem;
   text-align: center;
+  color: ${({theme}) => theme.ColorTitle };
 `;
 
 export function Footer() {
