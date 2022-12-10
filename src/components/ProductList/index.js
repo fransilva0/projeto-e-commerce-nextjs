@@ -64,7 +64,7 @@ export function ProductList({searchValue, ...propriedades}) {
         const produtos = propriedades.ProductsList[ProductListNames]
 
         return (
-          <SectionProducts>
+          <SectionProducts key={ProductListNames}>
             <div>
               <h2>{ProductListNames}</h2>
               <a href="#">Mais Produtos &rarr;</a>
@@ -78,7 +78,7 @@ export function ProductList({searchValue, ...propriedades}) {
                   return titleNormalized.includes(searchValueNormalized)
                 }).map((produto) => {
                   return (
-                    <li>
+                    <li key={produto.title}>
                       <img src={produto.image} />
                       <h3>{produto.title}</h3>
                       <p>{produto.price}</p>
