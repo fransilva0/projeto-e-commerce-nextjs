@@ -3,7 +3,7 @@
 
 &#xa0;
 
-<!-- <a href='linkdosite'>Demo</a> -->
+<a href='https://projeto-e-commerce-nextjs.vercel.app/'>Demo</a>
 
 </div>
 
@@ -64,10 +64,13 @@
   Durante o processo descrito no parágrafo anterior eu utilizei o conceito de Prop drilling, que é um estágio do desenvolvimento que acontece quando precisamos obter dados que estão em várias camadas na árvore de componente react. Já que o useState() foi colocado na página de index.js e precisou descer "perfurando" o componente de Header até chegar no componente SearchBar.
 </p>
 
+<p>
+  Como próxima etapa realizada eu construí um arquivo de tema e usei Providers para trabalhar a mudança de tema ao clicar em um botão DarkMode. O objetivo foi conhecer o Provider e utilizar ele de forma a praticar com um projeto real sua utilização. Além disso eu utilizei a Vercel para subir o projeto na web, o link se encontra no topo deste arquivo e no menu direito no repositório deste projeto.
+</p>
+
 ## :sparkles: Funcionalidades ##
 
-- [ ] Modo escuro na página;
-- [ ] Popup de politica de cookies;
+- [X] Modo escuro na página;
 - [ ] Tela de login funcional;
 - [ ] Página de perfil de usuário;
 - [X] Barra de pesquisa de produtos funcional;
@@ -82,7 +85,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Node.js](https://nodejs.org/en/)
 - [React](https://pt-br.reactjs.org/)
 - [Styled-Components](https://styled-components.com/)
-- [Styled-jsx](https://github.com/vercel/styled-jsx)
 - [Json](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/JSON)
 
 ## :white_check_mark: Pré requisitos ##
