@@ -87,7 +87,7 @@ export function ProductList({searchValue, ...propriedades}) {
                       <h3>{produto.title}</h3>
                       <p>{produto.price}</p>
                       <button onClick={() => {
-                        router.push("/productPage")
+                        router.push(`/productPage?product=${produto.title}`)
                       }} >Ver produto</button>
                     </li>
                   )
