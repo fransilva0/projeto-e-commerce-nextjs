@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { useRouter } from 'next/router';
 
 const SectionProducts = styled.section`
   margin: 2rem;
@@ -14,7 +15,9 @@ const SectionProducts = styled.section`
     color: ${({theme}) => theme.ColorTitle };
   }
 
-  a {
+  button {
+    border: none;
+    background: transparent;
     font-size: 0.9rem;
     color: ${({theme}) => theme.PrimaryColorBlue || "var(--cor-1)"};
     transition: all 300ms ease-out;
@@ -58,6 +61,7 @@ const SectionProducts = styled.section`
 
 export function ProductList({searchValue, ...propriedades}) {
   const ProductListNames = Object.keys(propriedades.ProductsList)
+  const router = useRouter()
   return (
     <>
       {ProductListNames.map((ProductListNames) => {
@@ -82,7 +86,9 @@ export function ProductList({searchValue, ...propriedades}) {
                       <img src={produto.image} />
                       <h3>{produto.title}</h3>
                       <p>{produto.price}</p>
-                      <a href={produto.url}>Ver produto</a>
+                      <button onClick={() => {
+                        router.push("/productPage")
+                      }} >Ver produto</button>
                     </li>
                   )
                 })
