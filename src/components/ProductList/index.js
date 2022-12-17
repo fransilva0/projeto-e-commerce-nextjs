@@ -15,7 +15,7 @@ const SectionProducts = styled.section`
     color: ${({theme}) => theme.ColorTitle };
   }
 
-  button {
+  button, a {
     border: none;
     background: transparent;
     font-size: 0.9rem;
@@ -85,7 +85,7 @@ export function ProductList({searchValue, ...propriedades}) {
                     <li key={produto.title}>
                       <img src={produto.image} />
                       <h3>{produto.title}</h3>
-                      <p>{produto.price}</p>
+                      <p>{"R$ " + parseFloat(produto.price).toFixed(2)}</p>
                       <button onClick={() => {
                         router.push(`/productPage?product=${produto.title}`)
                       }} >Ver produto</button>

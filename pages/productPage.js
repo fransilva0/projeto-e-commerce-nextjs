@@ -8,6 +8,8 @@ const StyledProductSection = styled.section`
   display: flex;
   justify-content: space-around;
   margin: 8rem 2rem 4rem 2rem;
+  position: fixed;
+  top: 0;
 
   img {
     width: 50%;
@@ -59,7 +61,7 @@ export default function ProductPage() {
                       <img src={produto.image} />
                         <div>
                           <h2>{produto.title}</h2>
-                          <PriceViewer>{produto.price}</PriceViewer>
+                          <PriceViewer>{"R$ " + parseFloat(produto.price).toFixed(2)}</PriceViewer>
                           <p>{produto.description}</p>
                         </div>
                     </>
