@@ -1,5 +1,6 @@
 import config from "../../../config.json"
 import styled from 'styled-components';
+import { StyledButton } from '../Button'
 
 const StyledBanner = styled.section`
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${config.imageBanner});
@@ -22,20 +23,6 @@ const StyledBanner = styled.section`
     margin-bottom: 1.5rem;
     font-size: 1rem;
   }
-
-  button {
-    padding: 0.5rem 1rem;
-    background: var(--cor-1);
-    border: 2px solid var(--cor-1);
-    color: ${({theme}) => theme.mainStyles.white || "#fff"};
-    transition: all 300ms ease-out;
-    width: 10rem;
-
-    &:hover {
-      background: var(--cor-2);
-      border-color: var(--cor-2);
-    }
-  }
 `;
 
 export function Banner() {
@@ -44,7 +31,7 @@ export function Banner() {
       <StyledBanner>
         <h2>Promoção de Aniversário</h2>
         <p>Todos os produtos com 20% de desconto</p>
-        <button>Produtos</button>
+        <StyledButton>Produtos</StyledButton>
       </StyledBanner>
     </>
   )

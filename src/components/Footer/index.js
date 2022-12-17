@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Icon } from '@iconify/react';
+import { StyledButton } from '../Button'
 
 const SectionFooterTop = styled.footer`
   background: ${({theme}) => theme.TerciaryColorBlue || "var(--cor-3)"};
@@ -86,19 +87,6 @@ const FooterForm = styled.div`
     font-family: ${({theme}) => theme.PrimaryColorBlue || "var(--cor-1)"};
   }
 
-  button {
-    padding: 0.5rem 1rem;
-    background: transparent;
-    border: 2px solid ${({theme}) => theme.PrimaryColorBlue || "var(--cor-1)"};
-    color: ${({theme}) => theme.PrimaryColorBlue || "var(--cor-1)"};
-    transition: all 300ms ease-out;
-
-    &:hover {
-      background: ${({theme}) => theme.PrimaryColorBlue || "var(--cor-1)"};
-      color: ${({theme}) => theme.mainStyles.white || "#fff"};
-    }
-  }
-
 `;
 
 const SectionFooterBottom = styled.div`
@@ -162,7 +150,7 @@ export function Footer() {
             ></textarea>
           </label>
 
-          <button type="submit">Enviar mensagem</button>
+          <StyledButton secondary type="submit">Enviar mensagem</StyledButton>
         </form>
       </FooterForm>
     </SectionFooterTop>

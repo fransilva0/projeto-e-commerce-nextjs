@@ -2,6 +2,7 @@ import { Icon } from '@iconify/react';
 import { SearchBar } from '../SearchBar';
 import styled from 'styled-components';
 import DarkModeSwitch from './DarkModeSwitch';
+import { StyledButton } from '../Button'
 
 const StyledHeader = styled.header`
   display: flex;
@@ -39,20 +40,6 @@ const SectionLogo = styled.div`
 
 `;
 
-const ButtonLogin = styled.a`
-  padding: 0.5rem 1rem;
-  margin: 0.5rem;
-  background: transparent;
-  border: 2px solid var(--cor-1);
-  color: var(--cor-1);
-  transition: all 300ms ease-out;
-
-  &:hover {
-    background: var(--cor-1);
-    color: #fff;
-  }
-`;
-
 export function Header({valorFiltro, setValorFiltro}) {
   return (
       <StyledHeader>
@@ -64,7 +51,7 @@ export function Header({valorFiltro, setValorFiltro}) {
         </SectionLogo>
         <SearchBar valorFiltro={valorFiltro} setValorFiltro={setValorFiltro} />
         <div>
-         <ButtonLogin  href="./pages/login.html">Login</ButtonLogin>
+         <StyledButton secondary  href="#">Login</StyledButton>
          <DarkModeSwitch />
         </div>
       </StyledHeader>
