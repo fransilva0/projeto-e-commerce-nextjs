@@ -68,13 +68,16 @@
   Como próxima etapa realizada eu construí um arquivo de tema e usei Providers para trabalhar a mudança de tema ao clicar em um botão DarkMode. O objetivo foi conhecer o Provider e utilizar ele de forma a praticar com um projeto real sua utilização. Além disso eu utilizei a Vercel para subir o projeto na web, o link se encontra no topo deste arquivo e no menu direito no repositório deste projeto.
 </p>
 
+<p>
+  Durante a construção do projeto utilizei bastante o useState do React, bem como o useRouter do nextJs. Como avanço no styled-components, eu construí um componente de botão que utiliza a expansão de estilo e a utilização de props para manipulação dos estilos dos diferentes tipos de botão.
+</p>
+
 ## :sparkles: Funcionalidades ##
 
 - [X] Modo escuro na página;
 - [ ] Tela de login funcional;
-- [ ] Página de perfil de usuário;
 - [X] Barra de pesquisa de produtos funcional;
-- [ ] Tela de compra de produtos;
+- [ ] Tela de visualização do produto;
 - [ ] Carrinho de compras funcional;
 - [ ] Separação de Produtos por categorias;
 
