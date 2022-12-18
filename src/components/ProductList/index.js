@@ -57,6 +57,16 @@ const SectionProducts = styled.section`
     color: ${({theme}) => theme.ColorTitle };
   }
 
+  @media (min-width: 360px) and (max-width: 767px) {
+    h2 {
+      font-size: 1rem;
+    }
+
+    ul {
+      justify-content: center;
+    }
+  }
+
 `;
 
 export function ProductList({searchValue, ...propriedades}) {

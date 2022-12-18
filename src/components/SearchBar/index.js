@@ -3,13 +3,11 @@ import styled from 'styled-components';
 
 const Search = styled.div`
   position: relative;
-  display: none;
   display: flex;
   justify-content: space-around;
 
   input {
     position: relative;
-    display: none;
     flex: 1 1 auto;
     height: 44px;
     width: 25vw;
@@ -32,13 +30,6 @@ const Search = styled.div`
     border: 0;
     padding: 0;
     color: ${({theme}) => theme.PrimaryColorBlue || "var(--cor-1)"};
-  }
-
-  @media (width >= 500px) {
-    display: block;
-    input {
-      display: block;
-    }
   }
 
   @media (width >= 650px) {

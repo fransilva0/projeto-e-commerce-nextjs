@@ -4,7 +4,8 @@ import { StyledButton } from '../Button'
 
 const StyledBanner = styled.section`
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${config.imageBanner});
-  height: 20rem;
+  height: 25rem;
+  width: 100wh;
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -22,6 +23,9 @@ const StyledBanner = styled.section`
   p {
     margin-bottom: 1.5rem;
     font-size: 1rem;
+  }
+
+  @media (min-width: 360px) and (max-width: 767px) {
   }
 `;
 

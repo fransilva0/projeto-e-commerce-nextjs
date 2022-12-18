@@ -29,6 +29,10 @@ const StyledHeader = styled.header`
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    @media (min-width: 360px) and (max-width: 767px) {
+      flex-direction: column;
+    }
   }
 
 `;
@@ -37,6 +41,11 @@ const SectionLogo = styled.div`
   display: flex;
   align-items: center;
   font-size: 1.5rem;
+
+  @media (min-width: 360px) and (max-width: 767px) {
+    font-size: 0.5rem;
+    flex-direction: column;
+  }
 
 `;
 

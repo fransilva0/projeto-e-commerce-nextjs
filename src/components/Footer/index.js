@@ -8,6 +8,10 @@ const SectionFooterTop = styled.footer`
   padding: 2rem;
   display: flex;
   justify-content: space-around;
+
+  @media (min-width: 360px) and (max-width: 767px) {
+    flex-direction: column;
+  }
 `;
 
 const SectionFooterLogo = styled.div`
@@ -85,6 +89,11 @@ const FooterForm = styled.div`
     outline: none;
     resize: none;
     font-family: ${({theme}) => theme.PrimaryColorBlue || "var(--cor-1)"};
+  }
+
+  @media (min-width: 360px) and (max-width: 767px) {
+    width: 100%;
+
   }
 
 `;
