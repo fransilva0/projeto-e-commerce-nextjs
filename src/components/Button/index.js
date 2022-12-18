@@ -22,4 +22,9 @@ export const StyledButton = styled(CommonStyling)`
   }
 `;
 
+export const StyledQuantityOfProductsButton = styled(StyledButton)`
+  border: none;
+  padding: 0.5rem;
+  border-radius: 2rem;
 
+`;

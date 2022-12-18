@@ -1,7 +1,9 @@
 import React from "react";
+import { Icon } from '@iconify/react';
 import { useRouter } from 'next/router';
 import config from "../config.json";
 import styled from 'styled-components';
+import { StyledQuantityOfProductsButton } from '../src/components/Button'
 
 const StyledProductSection = styled.section`
 
@@ -38,7 +40,23 @@ const PriceViewer = styled.p`
 
 `;
 
+const SectionQuantityOfProducts = styled.div`
+
+  display: flex;
+  align-items: center;
+  margin: 1rem 0 1rem 0;
+
+`;
+
+const QuantityOfProducts = styled.p`
+
+margin: 0 0.5rem 0 0.5rem;
+color: ${({theme}) => theme.PrimaryColorBlue || "var(--cor-1)"};
+
+`;
+
 export default function ProductPage() {
+  const [quantProduct, setQuantProduct] = React.useState(1);
   const router = useRouter()
   const productName = router.query.product
   const ProductListNames = Object.keys(config.productsList)
@@ -56,13 +74,33 @@ export default function ProductPage() {
                   const productActive = productName;
                   return titleNormalized == productActive
                 }).map((produto) => {
+                    const [productPriceViewer, setProductPriceViewer] = React.useState(produto.price)
                   return (
                     <>
                       <img src={produto.image} />
                         <div>
                           <h2>{produto.title}</h2>
-                          <PriceViewer>{"R$ " + parseFloat(produto.price).toFixed(2)}</PriceViewer>
+                          <PriceViewer>{"R$ " + parseFloat(productPriceViewer).toFixed(2)}</PriceViewer>
                           <p>{produto.description}</p>
+                          <SectionQuantityOfProducts>
+                            <StyledQuantityOfProductsButton secondary onClick={() => {
+                              if (quantProduct == 1) {
+                                setQuantProduct(1)
+                              } else {
+                                setQuantProduct(quantProduct - 1);
+                                setProductPriceViewer(productPriceViewer - produto.price)
+                              }
+                            }}>
+                              <Icon icon="ant-design:arrow-left-outlined" />
+                            </StyledQuantityOfProductsButton>
+                            <QuantityOfProducts>{quantProduct}</QuantityOfProducts>
+                            <StyledQuantityOfProductsButton secondary onClick={() => {
+                              setQuantProduct(quantProduct + 1);
+                              setProductPriceViewer(productPriceViewer + produto.price)
+                            }}>
+                            <Icon icon="ant-design:arrow-right-outlined" />
+                            </StyledQuantityOfProductsButton>
+                          </SectionQuantityOfProducts>
                         </div>
                     </>
                   )
