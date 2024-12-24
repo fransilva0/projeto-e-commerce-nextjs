@@ -3,7 +3,7 @@
 
 &#xa0;
 
-<a href='https://projeto-e-commerce-nextjs.vercel.app/'>Demo</a>
+<!-- <a href='https://projeto-e-commerce-nextjs.vercel.app/'>Demo</a> -->
 
 </div>
 
